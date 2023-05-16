@@ -1,0 +1,30 @@
+{% extends "superbase.html" %}
+{% block content %}
+<style>
+    th,td{font-size: x-large;padding:25px; border-style: double;border-width: 10px;}
+</style>
+<center>
+    <br><br>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Feed</th>
+        <th>Date</th>
+    </tr>
+    {% for d in data %}
+    <tr>
+        <td>
+            {{d.sender.name}}
+        </td>
+        <td>
+            {{d.con}}
+        </td>
+        <td>
+            {{d.date}}
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+<br><br>
+</center>
+{% endblock %}

@@ -1,0 +1,71 @@
+{% extends "adminbase.html" %}
+{% block content %}
+<section class="w3l-contact-2 py-5" id="contact">
+    <div class="container py-lg-5 py-md-4 py-2">
+        <div class="w3l-header-sec text-center mb-md-5 mb-4">
+            
+            <h1 style="font-size:60px;" align="left">Exercises</h1>
+        </div>
+        <div class="contact-grids d-grid">
+            <center>
+            <div class="contact-right">
+                <form  method="post" class="signin-form" enctype="multipart/form-data">
+                   
+{% csrf_token %}
+                        <input type="text" name="uname" id="w3lName" placeholder="Exercise Name*"
+                            class="contact-input" required="" />
+                            Video:
+                        <input type="file" name="file" id="w3lSender" placeholder="Video*"
+                            class="contact-input" required="" />
+                      
+                  
+                   
+                    <div class="form-buttonhny text-lg-end">
+                        <button class="btn btn-style btn-primary">Add</button>
+                    </div>
+                </form>
+            </div>
+        </center>
+        </div>
+
+   
+      
+    </div>
+</section>
+
+
+<div class="other_form_bg w-100">
+
+    <h1 style="margin: 50px;">Videos</h1>
+  
+   <table border="2" style="margin-left:300px;margin-bottom:100px">
+    <tr class="table_head">
+
+        
+       
+        
+        <th>Title</th>
+        <th>Video</th>
+        <th>Action</th>
+       
+    </tr>
+    {% for d1 in dta %}
+    <tr>
+        <td>{{d1.title}}</td>
+        <td><video name='demo' controls autoplay width='50%' height='60%'>
+            <source src="../static/media/{{d1.file}}" type="video/mp4"></source>
+            </video></td>
+            <td><a href="/mremove?id={{d1.id}}">Remove</a></td>
+  </tr>
+    
+    {% endfor %}
+</table>
+
+</div>
+
+{% if messages %}
+{% for msg in messages %}
+<script>alert("{{msg}}")</script>
+{% endfor %}
+{% endif %}
+{% endblock %}

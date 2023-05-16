@@ -1,0 +1,53 @@
+<style>
+.pyramid {
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  width: 200vmin;
+  aspect-ratio: 2 / 1;
+  background-color: gray;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1vmin;
+}
+.pyramid > * {
+  background: pink;
+}
+.one {
+  background-color: #EA1B07;
+  text-align: center;
+}
+.two {
+  background-color: #F4B600;
+  text-align: center;
+}
+.three {
+  background-color: #F9E029;
+  text-align: center;
+}
+.four {
+  background-color: #049DFC;
+  text-align: center;
+}
+.five {
+  background-color: #A77643;
+  text-align: center;
+}
+.six {
+  background-color: #5CD533;
+  text-align: center;
+}
+.seven {
+  background-color: #6ba0f0;
+  text-align: center;
+}
+</style>
+{%  if data %}
+<div class="pyramid">
+<div class="one" title="breakfast calories"></div>
+<div class="two" style="text-align: center;"><textarea name="" id="" style="background: none; text-align: center; margin-top: 20px;border: none;resize: none;width: 200px;  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" cols="30" rows="10">{{data.bcal}}</textarea></div>
+<div class="three"style="text-align: center;"><textarea name="" id="" style="background: none; text-align: center; margin-top: 20px;border: none;resize: none;width: 200px;  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; line-height: 25px;" cols="30" rows="10">{{data.breakfast}}</textarea></div>
+<div class="four"style="text-align: center;"><textarea name="" id="" style="background: none; text-align: center; margin-top: 20px;border: none;resize: none;width: 200px;  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" cols="30" rows="10">{{data.lcal}}</textarea></div>
+<div class="five"style="text-align: center;"><textarea name="" id="" style="background: none; text-align: center; margin-top: 20px;border: none;resize: none;width: 200px;  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  line-height: 25px;" cols="30" rows="10">{{data.lunch}}</textarea></div>
+<div class="six"style="text-align: center;"><textarea name="" id="" style="background: none; text-align: center; margin-top: 20px;border: none;resize: none;width: 200px;  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" cols="30" rows="10">{{data.dcal}}</textarea></div>
+<div class="seven"style="text-align: center;"><textarea name="" id="" style="background: none; text-align: center; margin-top: 20px;border: none;resize: none;width: 200px;  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  line-height: 25px;" cols="30" rows="10">{{data.dinner}}</textarea></div>
+{% endif %}
+</div>

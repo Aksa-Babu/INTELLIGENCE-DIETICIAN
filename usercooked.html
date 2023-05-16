@@ -1,0 +1,36 @@
+{% extends "userbase.html" %}
+{% block content %}
+
+
+
+
+
+<style>
+    h3,fieldset{padding: 10px;
+    color:rgb(0, 0, 0)}
+</style>
+<h1 align="center" class="bg-light"><u>COOKED FOODS</u></h1>
+<div class="w3-services-grids py-lg-4 text-center" style="padding: 20px;">
+    <div class="fea-gd-vv row">
+        {% for d in data %}
+        <div class="col-lg-4 col-md-7" style="margin-bottom: 30px">
+            <div class="feature-gd icon-yellow">
+                <div class="icon">
+                    <i
+                        ><iframe width="560" height="315" src="{{d.link}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></i>
+                </div>
+                <div class="info" style="margin-top: 50px">
+                    <h3>{{d.title}}</h3>
+                    Ingredients:
+                    <h3>{{d.ing}}</h3>
+                  
+                   
+               
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}

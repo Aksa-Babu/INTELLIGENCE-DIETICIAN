@@ -1,0 +1,268 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Biodata - Personal Category Bootstrap Responsive Web Template - Home : W3Layouts</title>
+    <!-- google font -->
+    <link href="//fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Template CSS Style link -->
+    <link rel="stylesheet" href="../static/assets/css/style-starter.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header id="site-header" class="fixed-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+               
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                    <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+                </button>
+             
+              
+            </nav>
+        </div>
+    </header>
+    <!-- //header -->
+
+
+
+
+
+
+
+    <!-- banner section -->
+    <!-- <section class="w3l-banner py-5" id="home">
+        <div class="container py-md-5 py-4">
+            <div class="row align-items-center pt-4">
+                <div class="col-md-6 banner-left pe-xl-5">
+                    <h4>Hi, I'm Mary Ateer</h4>
+                    <h3 class="mb-3 mt-1">Developer</h3>
+                    <p class="banner-sub me-md-5">I love to work in UI/UX designing.
+                        I always try my best to make good UI with the best UX.
+                    </p>
+                    <div class="d-flex align-items-center buttons-banner mt-sm-5 mt-4">
+                        <a href="about.html" class="btn btn-style me-2">Hire Me</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                </div>
+            </div>
+        </div> -->
+
+
+
+        <!-- animations icons -->
+        <div class="icon-effects-w3-1 text-right">
+            <img src="../static/assets/images/icon2.png" alt="" class="img-fluid">
+        </div>
+        <div class="icon-effects-w3-2 text-right">
+            <img src="../static/assets/images/icon3.png" alt="" class="img-fluid">
+        </div>
+        <div class="icon-effects-w3-3 text-right">
+            <img src="../static/assets/images/icon1.png" alt="" class="img-fluid">
+        </div>
+        <div class="icon-effects-w3-4 text-right">
+            <img src="../static/assets/images/icon6.png" alt="" class="img-fluid">
+        </div>
+        <!-- //animations icons -->
+    </section>
+
+
+
+
+
+
+    {% block content6 %}
+    
+    {% endblock %}
+
+
+
+
+    
+
+
+
+
+    
+    <!-- footer -->
+    <footer class="footer-w3ls text-center py-5">
+        <div class="container pt-4">
+            <div class="mx-auto" style="max-width:600px;">
+                <a href="index.html" class="footer-logo py-1">
+                    <i class="fas fa-bold"></i>.
+                </a>
+                <p class="mt-4 text-white">Itaque earum rerum hic tenetur asaItaque
+                    earum rerum hic tenetur asap iente delectus ac elit in
+                    coeiciendis maiores.</p>
+                <div class="social-icons-main mt-4 pb-3">
+                    <ul class="social-icons3">
+                        <li>
+                            <a href="#facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#linkedinin">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#dribbble">
+                                <i class="fab fa-dribbble"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- copyright -->
+            <p class="copy-right-w3 text-white mt-5 pt-4">© 2021 Biodata. All rights reserved | Design by
+                <a href="http://w3layouts.com" target="_blank"> W3layouts.</a>
+            </p>
+        </div>
+    </footer>
+    <!-- //footer -->
+
+    <!-- Js scripts -->
+    <!-- move top -->
+    <button onclick="topFunction()" id="movetop" title="Go to top">
+        <span class="fas fa-level-up-alt" aria-hidden="true"></span>
+    </button>
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("movetop").style.display = "block";
+            } else {
+                document.getElementById("movetop").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <!-- //move top -->
+
+    <!-- common jquery plugin -->
+    <script src="../static/assets/js/jquery-3.3.1.min.js"></script>
+    <!-- //common jquery plugin -->
+
+    <!-- libhtbox -->
+    <script src="../static/assets/js/lightbox-plus-jquery.min.js"></script>
+    <!-- libhtbox -->
+
+    <!-- testimonials owlcarousel -->
+    <script src="../static/assets/js/owl.carousel.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.owl-two').owlCarousel({
+                loop: true,
+                margin: 30,
+                nav: false,
+                responsiveClass: true,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplaySpeed: 1000,
+                autoplayHoverPause: false,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: false
+                    },
+                    480: {
+                        items: 1,
+                        nav: false
+                    },
+                    667: {
+                        items: 1,
+                        nav: false
+                    },
+                    1000: {
+                        items: 1,
+                        nav: false
+                    }
+                }
+            })
+        })
+    </script>
+    <!-- //script for Testimonials-->
+
+    <!-- theme switch js (light and dark)-->
+    <script src="../static/assets/js/theme-change.js"></script>
+    <!-- //theme switch js (light and dark)-->
+
+    <!-- MENU-JS -->
+    <script>
+        $(window).on("scroll", function () {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 80) {
+                $("#site-header").addClass("nav-fixed");
+            } else {
+                $("#site-header").removeClass("nav-fixed");
+            }
+        });
+
+        //Main navigation Active Class Add Remove
+        $(".navbar-toggler").on("click", function () {
+            $("header").toggleClass("active");
+        });
+        $(document).on("ready", function () {
+            if ($(window).width() > 991) {
+                $("header").removeClass("active");
+            }
+            $(window).on("resize", function () {
+                if ($(window).width() > 991) {
+                    $("header").removeClass("active");
+                }
+            });
+        });
+    </script>
+    <!-- //MENU-JS -->
+
+    <!-- disable body scroll which navbar is in active -->
+    <script>
+        $(function () {
+            $('.navbar-toggler').click(function () {
+                $('body').toggleClass('noscroll');
+            })
+        });
+    </script>
+    <!-- //disable body scroll which navbar is in active -->
+
+    <!-- bootstrap -->
+    <script src="../static/assets/js/bootstrap.min.js"></script>
+    <!-- //bootstrap -->
+    <!-- //Js scripts -->
+</body>
+
+</html>

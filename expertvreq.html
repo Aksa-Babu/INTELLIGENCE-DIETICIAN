@@ -1,0 +1,80 @@
+{% extends "expertbase.html" %}
+{% block content %}
+
+<style>
+    th,td{
+        padding: 10px;
+        font-size: large;
+        color: rgb(0, 0, 0);
+    }
+    th{
+        background-color:rgb(251, 103, 35);
+        color: white;
+    }
+    </style>
+    <div style="margin: 50px;">
+       <center> <h1 style="margin: 10px;color:rgb(0, 0, 0)">Requests</h1>
+        <table  style="margin-top: 40px;">
+        <tr>
+            <th>CUSTOMER NAME</th>
+            <th>BMI</th>
+            <th>Health Stat</th>
+            <th>height</th>
+            <th>weight</th>
+            <th>Breakfast</th>
+            <th>Lunch</th>
+            <th>Snack</th>
+            <th>Dinner</th>
+            <th>E-Snack</th>
+            <th>ACIION</th>
+            
+         
+            
+          
+            
+          
+         
+            {% comment %} <th colspan="2">ACTION</th> {% endcomment %}
+        </tr>
+    
+   {% for d in data %}
+      <tr>
+        <td>{{d.user.name}}</td>
+        
+        <td>{{d.bmi}}</td>
+        <td>{{d.healthstat}}</td>
+        <td>{{d.height}}</td>
+        <td>{{d.weight}}</td>
+        <td>{{d.breakfast}}</td>
+        <td>{{d.lunch}}</td>
+        <td>{{d.snack}}</td>
+        <td>{{d.dinner}}</td>
+        <td>{{d.esnack}}</td>
+        {% if d.status == "requested" %}
+        <td>        <a href="/exppyramid?id={{d.id}}">Create</a>
+</td>
+        {% elif d.status == "Processed" %}
+        <td>        <a href="/inchat?email={{d.user.email}}">Chat</a>
+        </td>
+        {% endif %}
+
+    
+   
+             
+           
+         
+    </tr>
+      {% endfor %}
+  
+        </table>
+    </center>
+    </div>
+
+
+    </div>
+{% if messages %}
+{% for msg in messages %}
+<script>alert("{{msg}}")</script>
+{% endfor %}
+{% endif %}
+{% endblock %}

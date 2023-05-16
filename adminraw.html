@@ -1,0 +1,94 @@
+{% extends "adminbase.html" %}
+{% block content %}
+<section class="w3l-contact-2 py-5" id="contact">
+    <div class="container py-lg-5 py-md-4 py-2">
+        <div class="w3l-header-sec text-center mb-md-5 mb-4">
+            
+            <h1 style="font-size:60px;" align="left">Raw Food Recipes</h1>
+        </div>
+        <div class="contact-grids d-grid">
+            <center>
+            <div class="contact-right">
+                <form  method="post" class="signin-form">
+                   
+{% csrf_token %}
+                        <input type="text" name="uname" id="w3lName" placeholder="Recipe Name*"
+                            class="contact-input" required="" />
+                        <input type="text" name="url" id="w3lName" placeholder="Video Link*"
+                            class="contact-input" required="" />
+                        
+                            <textarea name="ing" id="" cols="30" rows="10" required placeholder="Ingredients"></textarea>
+                      
+                  
+                   
+                    <div class="form-buttonhny text-lg-end">
+                        <button class="btn btn-style btn-primary">Add</button>
+                    </div>
+                </form>
+            </div>
+        </center>
+        </div>
+
+   
+      
+    </div>
+</section>
+
+
+
+
+<style>
+    th,td{
+        padding: 10px;
+        font-size: large;
+        color: rgb(0, 0, 0);
+    }
+    th{
+        background-color:rgb(251, 103, 35);
+        color: white;
+    }
+    </style>
+    <div style="margin: 50px;">
+       <center> <h1 style="margin: 10px;color:rgb(0, 0, 0)">Raw Recipes</h1>
+        <table  style="margin-top: 40px;">
+        <tr>
+            <th>RECIPE NAME</th>
+            <th>INGREDIENTS</th>
+            <th>VIDEO</th>
+            
+         
+            
+          
+            
+          
+         
+            {% comment %} <th colspan="2">ACTION</th> {% endcomment %}
+        </tr>
+    
+   {% for d in data %}
+      <tr>
+        <td>{{d.title}}</td>
+        
+        <td>{{d.ing}}</td>
+        <td>{{d.link}}</td>
+    
+   
+             
+           
+         
+    </tr>
+      {% endfor %}
+  
+        </table>
+    </center>
+    </div>
+
+
+    </div>
+
+{% if messages %}
+{% for msg in messages %}
+<script>alert("{{msg}}")</script>
+{% endfor %}
+{% endif %}
+{% endblock %}

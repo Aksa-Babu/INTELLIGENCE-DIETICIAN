@@ -1,0 +1,41 @@
+
+{% extends 'userbase.html' %}
+{% block content %}
+<div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/breadcrumbs-bg.jpg');">
+    <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
+
+        <!-- <h2>Pump</h2> -->
+        <h2 style="color:rgb(0, 0, 0);padding:40px">MESSAGE</h2>
+
+    </div>
+</div><!-- End Breadcrumbs -->
+
+<!-- ======= Contact Section ======= -->
+<!-- End Contact Section -->
+<section id="contact" class="contact">
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+
+
+
+                  <form method="post">
+                    {% csrf_token %}
+                  
+                    <div class="text-center mt-3"><textarea class="form-control" rows="5" name="msg" placeholder="Feedback/Complaint" required></textarea></div>
+                    <br>
+                    <div class="text-center mt-3"><button type="submit" name="submit" class="btn btn-warning">Submit</button></div><br>
+                </form>
+            </div><!-- End Contact Form -->
+
+        </div>
+
+    </div>
+    
+    
+    {% if messages %}
+    {% for msg in messages %}
+    <script>alert('{{msg}}')</script>
+    {% endfor %}
+    {% endif %}
+
+{% endblock %}
