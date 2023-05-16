@@ -9,7 +9,7 @@ Author URL: http://w3layouts.com
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Cooking - Restaurants Category Bootstrap Responsive Website Template - Home : W3Layouts</title>
+    <title>Cooking - Restaurants Category Bootstrap Responsive Website Template - Classes : W3Layouts</title>
     <!-- Google fonts -->
     <link href="//fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
     <!-- Template CSS Style link -->
@@ -33,13 +33,13 @@ Author URL: http://w3layouts.com
                 <div class="collapse navbar-collapse" id="navbarScroll">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="about.html">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="classes.html">Classes</a>
+                            <a class="nav-link active" href="classes.html">Classes</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">Contact</a>
@@ -71,70 +71,23 @@ Author URL: http://w3layouts.com
     </header>
     <!-- //header -->
 
-    <!-- banner section -->
-    <section class="w3l-main-slider" id="home">
-        <div class="banner-content">
-            <div id="demo-1"
-                data-zs-src='["assets/images/banner1.jpg", "assets/images/banner2.jpg","assets/images/banner3.jpg", "assets/images/banner4.jpg"]'
-                data-zs-overlay="dots">
-                <div class="demo-inner-content text-center">
-                    <div class="container">
-                        <div class="banner-info">
-                            <h5>Cooking is Easy</h5>
-                            <h3 class="mt-2 mb-5">Passion For Cooking</h3>
-                            <p>Helping You To Be Chef at Your Own House</p>
-                            <a href="about.html" class="btn btn-style mt-4">Learn More</a>
-                        </div>
-                    </div>
-                </div>
+    <!-- inner banner -->
+    <section class="inner-banner py-5">
+        <div class="w3l-breadcrumb py-lg-5">
+            <div class="container pt-5 pb-sm-4 pb-2">
+                <h4 class="inner-text-title font-weight-bold pt-5">Cooking Courses</h4>
+                <ul class="breadcrumbs-custom-path">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><i class="fas fa-angle-right mx-2"></i>Classes</li>
+                </ul>
             </div>
         </div>
     </section>
-    <!-- //banner section -->
-
-    <!-- about section -->
-    <section class="w3l-aboutblock py-5">
-        <div class="container py-lg-5 py-md-4 py-2">
-            <div class="row align-items-center">
-                <div class="col-lg-5">
-                    <h3 class="title-style">Learn how to cook from your house</h3>
-                    <p class="mt-3">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur.
-                        Mumquam eius modi tempora incidunt ut labore et.</p>
-                    <div class="row mt-lg-5 mt-4">
-                        <div class="col-sm-6 grids_info">
-                            <i class="fas fa-utensils"></i>
-                            <div class="detail mt-sm-4 mt-3">
-                                <h4>Easy Manual</h4>
-                                <p>Sed ut perspiciatis unde omnis iste natus.</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 grids_info mt-sm-0 mt-4">
-                            <i class="fas fa-bread-slice"></i>
-                            <div class="detail mt-sm-4 mt-3">
-                                <h4> For Everyone</h4>
-                                <p>Sed ut perspiciatis unde omnis iste natus.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-7 ps-lg-5 mt-lg-0 mt-5">
-                    <div class="row align-items-center">
-                        <div class="col">
-                            <img src="assets/images/about1.jpg" alt="" class="img-fluid radius-image">
-                        </div>
-                        <div class="col">
-                            <img src="assets/images/about2.jpg" alt="" class="img-fluid radius-image">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- //about section -->
+    <!-- //inner banner -->
 
     <!-- courses section -->
     <section class="w3l-courses py-5" id="courses">
-        <div class="container pb-lg-5 pb-md-4 pb-2">
+        <div class="container py-lg-5 py-md-4 py-2">
             <h5 class="sub-title text-center">Our Cooking Classes</h5>
             <h3 class="title-style text-center">Popular Courses</h3>
             <div class="row justify-content-center">
@@ -212,6 +165,10 @@ Author URL: http://w3layouts.com
                                 <img class="card-img-bottom d-block" src="assets/images/c3.jpg" alt="Card image cap">
                             </a>
                             <div class="post-pos">
+                                <a href="classes.html" class="receipe blue">Cooking</a>
+                                <a href="classes.html" class="receipe yellow ml-2">Recipe</a>
+                            </div>
+                            <div class="post-pos">
                                 <a href="classes.html" class="receipe blue">Beginner</a>
                                 <a href="classes.html" class="receipe yellow ml-2">Free</a>
                             </div>
@@ -237,123 +194,121 @@ Author URL: http://w3layouts.com
                         </div>
                     </div>
                 </div>
-                <div class="mt-5 mx-auto text-more text-center pt-lg-4">
-                    <a href="classes.html" class="btn btn-style">View All Courses</a>
+                <div class="col-lg-4 col-md-6 item mt-5">
+                    <div class="card">
+                        <div class="card-header p-0 position-relative">
+                            <a href="classes.html" class="zoom d-block">
+                                <img class="card-img-bottom d-block" src="assets/images/c4.jpg" alt="Card image cap">
+                            </a>
+                            <div class="post-pos">
+                                <a href="classes.html" class="receipe blue">Beginner</a>
+                                <a href="classes.html" class="receipe yellow ml-2">New</a>
+                            </div>
+                        </div>
+                        <div class="card-body course-details">
+                            <div class="price-review d-flex justify-content-between mb-1align-items-center">
+                                <p>$53.00</p>
+                                <ul class="rating-star">
+                                    <li><span class="fas fa-star"></span></li>
+                                    <li><span class="fas fa-star"></span></li>
+                                    <li><span class="fas fa-star"></span></li>
+                                    <li><span class="fas fa-star"></span></li>
+                                    <li><span class="fas fa-star-o"></span></li>
+                                </ul>
+                            </div>
+                            <a href="classes.html" class="course-desc">The Importance Of Food Elements & Cooking tips
+                            </a>
+                            <div class="course-meta mt-4">
+                                <div class="meta-item course-lesson">
+                                    <span class="fas fa-users"></span>
+                                    <span class="meta-value"> 68 Students enrolled</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <!-- //courses section -->
 
-    <!-- why section -->
-    <section class="w3l-whyblock py-5">
-        <div class="pb-lg-5 pb-md-4 pb-2">
-            <div class="row align-items-center m-0">
-                <div class="col-lg-6 ps-0">
-                    <img src="assets/images/about.jpg" alt="" class="img-fluid">
+                <div class="col-lg-4 col-md-6 item mt-5">
+                    <div class="card">
+                        <div class="card-header p-0 position-relative">
+                            <a href="classes.html" class="zoom d-block">
+                                <img class="card-img-bottom d-block" src="assets/images/c5.jpg" alt="Card image cap">
+                            </a>
+                            <div class="post-pos">
+                                <a href="classes.html" class="receipe blue">Cooking</a>
+                                <a href="classes.html" class="receipe yellow ml-2">Recipe</a>
+                            </div>
+                        </div>
+                        <div class="card-body course-details">
+                            <div class="price-review d-flex justify-content-between mb-1align-items-center">
+                                <p>$70.00</p>
+                                <ul class="rating-star">
+                                    <li><span class="fas fa-star"></span></li>
+                                    <li><span class="fas fa-star"></span></li>
+                                    <li><span class="fas fa-star"></span></li>
+                                    <li><span class="fas fa-star"></span></li>
+                                    <li><span class="fas fa-star-o"></span></li>
+                                </ul>
+                            </div>
+                            <a href="classes.html" class="course-desc">How To Cook Turkey On Natural Gas Grills</a>
+                            <div class="course-meta mt-4">
+                                <div class="meta-item course-lesson">
+                                    <span class="fas fa-users"></span>
+                                    <span class="meta-value"> 44 Students enrolled</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-6 ps-xl-5 ps-lg-4 mt-lg-0 mt-5">
-                    <h5 class="sub-title">Our Features</h5>
-                    <h3 class="title-style mb-4">Why Choose Us?</h3>
-                    <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
-                        ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit.</p>
-                    <div class="two-grids mt-5">
-                        <div class="grids_info">
-                            <i class="fas fa-trophy"></i>
-                            <div class="detail">
-                                <h4>We Are Winners of 50 Competitions</h4>
-                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                                    mollit.</p>
+
+                <div class="col-lg-4 col-md-6 item mt-5">
+                    <div class="card">
+                        <div class="card-header p-0 position-relative">
+                            <a href="classes.html" class="zoom d-block">
+                                <img class="card-img-bottom d-block" src="assets/images/c6.jpg" alt="Card image cap">
+                            </a>
+                            <div class="post-pos">
+                                <a href="classes.html" class="receipe blue">Beginner</a>
+                                <a href="classes.html" class="receipe yellow ml-2">Free</a>
                             </div>
                         </div>
-                        <div class="grids_info mt-xl-5 mt-lg-4 mt-5">
-                            <i class="fas fa-user-friends"></i>
-                            <div class="detail">
-                                <h4>27 Professional Chefs-Trainers</h4>
-                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                                    mollit.</p>
+                        <div class="card-body course-details">
+                            <div class="price-review d-flex justify-content-between mb-1align-items-center">
+                                <p>$69.00</p>
+                                <ul class="rating-star">
+                                    <li><span class="fas fa-star"></span></li>
+                                    <li><span class="fas fa-star"></span></li>
+                                    <li><span class="fas fa-star"></span></li>
+                                    <li><span class="fas fa-star"></span></li>
+                                    <li><span class="fas fa-star-o"></span></li>
+                                </ul>
                             </div>
-                        </div>
-                        <div class="grids_info mt-xl-5 mt-lg-4 mt-5">
-                            <i class="fas fa-hourglass-half"></i>
-                            <div class="detail">
-                                <h4>Guaranteed Fast Employment</h4>
-                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                                    mollit.</p>
+                            <a href="classes.html" class="course-desc">Chef Olive explains the role of best cooking tips</a>
+                            <div class="course-meta mt-4">
+                                <div class="meta-item course-lesson">
+                                    <span class="fas fa-users"></span>
+                                    <span class="meta-value"> 74 Students enrolled</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- pagination -->
+            <div class="pagination-wrapper mt-5 pt-lg-3 text-center">
+                <ul class="page-pagination">
+                    <li><span aria-current="page" class="page-numbers current">1</span></li>
+                    <li><a class="page-numbers" href="#url">2</a></li>
+                    <li><a class="page-numbers" href="#url">3</a></li>
+                    <li><a class="page-numbers" href="#url">...</a></li>
+                    <li><a class="page-numbers" href="#url">15</a></li>
+                    <li><a class="next" href="#url">Next <span class="fa fa-angle-right"></span></a></li>
+                </ul>
+            </div>
+            <!-- //pagination -->
         </div>
     </section>
-    <!-- //why section -->
-
-    <!-- team section -->
-    <div class="w3l-team-grids-sec py-5" id="team">
-        <div class="container pb-lg-5 pb-md-4 pb-2">
-            <h5 class="sub-title text-center">Team of Professionals</h5>
-            <h3 class="title-style text-center">Our Best Chefs</h3>
-            <div class="row cards justify-content-center">
-                <div class="col-lg-4 col-md-6 mt-5">
-                    <a href="#img" class="card">
-                        <img src="assets/images/team1.jpg" class="card__image radius-image" alt="" />
-                        <div class="card__overlay">
-                            <div class="card__header">
-                                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
-                                    <path />
-                                </svg>
-                                <div class="card__header-text">
-                                    <h3 class="card__title">Olive Yew</h3>
-                                    <span class="card__status">Masterchef</span>
-                                </div>
-                            </div>
-                            <p class="card__description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                                diam nonummy nibh.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-6 mt-5">
-                    <a href="#img" class="card">
-                        <img src="assets/images/team2.jpg" class="card__image radius-image" alt="" />
-                        <div class="card__overlay">
-                            <div class="card__header">
-                                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
-                                    <path />
-                                </svg>
-                                <div class="card__header-text">
-                                    <h3 class="card__title">Aida Joe</h3>
-                                    <span class="card__status">Masterchef</span>
-                                </div>
-                            </div>
-                            <p class="card__description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                                diam nonummy nibh.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-6 mt-5">
-                    <a href="#img" class="card">
-                        <img src="assets/images/team3.jpg" class="card__image radius-image" alt="" />
-                        <div class="card__overlay">
-                            <div class="card__header">
-                                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
-                                    <path />
-                                </svg>
-                                <div class="card__header-text">
-                                    <h3 class="card__title">Teri Dac</h3>
-                                    <span class="card__status">Masterchef</span>
-                                </div>
-                            </div>
-                            <p class="card__description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                                diam nonummy nibh.</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- //team section -->
+    <!-- //courses section -->
 
     <!-- content block1 -->
     <section class="w3l-content-block1 py-5">
@@ -373,92 +328,59 @@ Author URL: http://w3layouts.com
     </section>
     <!-- //content block1 -->
 
-    <!-- blog section -->
-    <section class="w3l-blog py-5" id="blog">
+     <!-- about 3grids section -->
+     <section class="home-grids-section py-5">
         <div class="container py-lg-5 py-md-4 py-2">
-            <h5 class="sub-title text-center">Latest News</h5>
-            <h3 class="title-style text-center">Our Fresh Blog Posts</h3>
-            <div class="row inner-sec-w3ls justify-content-center">
-                <div class="col-lg-4 col-md-6 about-in blog-grid-info text-left mt-5">
-                    <div class="card img">
-                        <div class="card-body img">
-                            <a href="#blog" class="d-block">
-                                <img src="assets/images/blog1.jpg" alt="" class="img-fluid radius-image">
-                            </a>
-                            <div class="blog-des">
-                                <ul class="admin-post mb-3">
-                                    <li>
-                                        <a href="#admin"><span class="fas fa-user"></span> by Admin</a>
-                                    </li>
-                                    <li>
-                                        <a href="#recipes"><span class="fas fa-tags"></span> Recipes</a>
-                                    </li>
-                                    <li>
-                                        <a href="#comments"><span class="fas fa-comments"></span> 3</a>
-                                    </li>
-                                </ul>
-                                <h5 class="card-title mb-3"><a href="#blog">
-                                        The Importance Of Food Elements & Tips for Cooking </a></h5>
-                                <p>Excepteur sint occaecat cupidatat non, sunt in culpa qui officia.</p>
-                            </div>
+            <div class="row mb-md-5 mb-4">
+                <div class="col-md-10 col-lg-7 mx-auto text-center px-xl-4">
+                    <h5 class="sub-title text-center">Cooking Steps</h5>
+                    <h3 class="title-style text-center">Easy Way To Make You Expert at Cooking</h3>
+                </div>
+            </div>
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="home-grids-block">
+                        <div class="grids-icon mb-3">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <div class="grids-content">
+                            <h5 class="mb-3"><a href="about.html">Find Course</a></h5>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit accusa ntium dolor emque
+                                laudan erts.</p>
+                            <a href="services.html" class="btn btn-style btn-style-primary mt-3">Learn More</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 about-in blog-grid-info text-left mt-5">
-                    <div class="card img">
-                        <div class="card-body img">
-                            <a href="#blog" class="d-block">
-                                <img src="assets/images/blog2.jpg" alt="" class="img-fluid radius-image">
-                            </a>
-                            <div class="blog-des">
-                                <ul class="admin-post mb-3">
-                                    <li>
-                                        <a href="#admin"><span class="fas fa-user"></span> by Admin</a>
-                                    </li>
-                                    <li>
-                                        <a href="#classes"><span class="fas fa-tags"></span> Classes</a>
-                                    </li>
-                                    <li>
-                                        <a href="#comments"><span class="fas fa-comments"></span> 4</a>
-                                    </li>
-                                </ul>
-                                <h5 class="card-title mb-3"><a href="#blog">
-                                        How To Cook Turkey On Natural Gas Grills</a>
-                                </h5>
-                                <p>Excepteur sint occaecat cupidatat non, sunt in culpa qui officia.</p>
-                            </div>
+                <div class="col-lg-4 col-md-6 mt-md-0 mt-5">
+                    <div class="home-grids-block">
+                        <div class="grids-icon mb-md-4 mb-3">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <div class="grids-content">
+                            <h5 class="mb-3"><a href="about.html">Learn Online</a></h5>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit accusa ntium dolor emque
+                                laudan erts.</p>
+                            <a href="services.html" class="btn btn-style btn-style-primary mt-3">Learn More</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 about-in blog-grid-info text-left mt-5">
-                    <div class="card img">
-                        <div class="card-body img">
-                            <a href="#blog" class="d-block">
-                                <img src="assets/images/blog3.jpg" alt="" class="img-fluid radius-image">
-                            </a>
-                            <div class="blog-des">
-                                <ul class="admin-post mb-3">
-                                    <li>
-                                        <a href="#admin"><span class="fas fa-user"></span> by Admin</a>
-                                    </li>
-                                    <li>
-                                        <a href="#coach"><span class="fas fa-tags"></span> Coach</a>
-                                    </li>
-                                    <li>
-                                        <a href="#comments"><span class="fas fa-comments"></span> 6</a>
-                                    </li>
-                                </ul>
-                                <h5 class="card-title mb-3"><a href="#blog">Chef Olive explains the
-                                        role of best cooking tips</a></h5>
-                                <p>Excepteur sint occaecat cupidatat non, sunt in culpa qui officia.</p>
-                            </div>
+                <div class="col-lg-4 col-md-6 mt-lg-0 mt-5">
+                    <div class="home-grids-block">
+                        <div class="grids-icon mb-md-4 mb-3">
+                            <i class="fas fa-wrench"></i>
+                        </div>
+                        <div class="grids-content">
+                            <h5 class="mb-3"><a href="about.html">Make Your Food</a></h5>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit accusa ntium dolor emque
+                                laudan erts.</p>
+                            <a href="services.html" class="btn btn-style btn-style-primary mt-3">Learn More</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- //blog section -->
+    <!-- //about 3grids section -->
 
     <!-- instagram-feeds -->
     <div class="projects" id="special">
@@ -628,12 +550,6 @@ Author URL: http://w3layouts.com
     <!-- common jquery plugin -->
     <script src="assets/js/jquery-3.3.1.min.js"></script>
     <!-- //common jquery plugin -->
-
-    <!-- slider-js -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/modernizr-2.6.2.min.js"></script>
-    <script src="assets/js/jquery.zoomslider.min.js"></script>
-    <!-- //slider-js -->
 
     <!-- theme switch js (light and dark)-->
     <script src="assets/js/theme-change.js"></script>
